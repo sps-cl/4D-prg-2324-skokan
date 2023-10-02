@@ -1,14 +1,34 @@
-﻿using LibraryApp.moduls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibraryApp.models;
 
 namespace LibraryApp
 {
-    internal class library<T> where T : libraryitem<T>
+    internal class Library<T> where T : LibraryItem<T>
     {
         List<T> items = new List<T>();
+
+        public void Add(T item)
+        {
+            items.Add(item);
+        }
+
+        public void ListItems(book, DVD)
+        {
+            Console.WriteLine("itemy");
+            foreach (T item in items)
+            {
+                item.DisplayInfo();
+            }
+        }
+
+        public void CheckoutInfo(int id);
+        {
+            
+        }
     }
+    
 }

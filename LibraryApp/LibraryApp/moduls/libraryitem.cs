@@ -4,22 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryApp.moduls
+namespace LibraryApp.models
 {
-    internal abstract class libraryitem
+    internal abstract class LibraryItem<T>
     {
-        private int Id { get; }
-        private string Title { get; }
+        public int Id { get; }
+        public string Title { get; }
         public bool IsAvailable { get; set; }
 
-        public libraryitem(int Id, string Title)
+        public LibraryItem(int id, string Title)
         {
-            this.Id = Id;
+            this.Id = id;
             this.Title = Title;
             this.IsAvailable = true;
         }
 
         public abstract void DisplayInfo();
-
     }
 }
