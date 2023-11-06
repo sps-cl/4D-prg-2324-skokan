@@ -1,0 +1,37 @@
+h1, p {
+    font-size: 64px;
+    background-color: blue;
+}
+
+p {
+    font-size: 3rem;
+    background-color: blue;
+}
+
+div {
+    margin: 2em;
+    padding: 2rem;
+    border-bottom: 7px solid green;
+    font-size: 22px;
+    background-color: aqua;
+    text-align: center;
+    display:block;
+} 
+
+div:hover {
+    font-size: 22px;
+    background-color: rgb(13, 19, 19);
+}
+
+.brownbackground {
+    background-color: brown;
+}
+
+#p1 {
+    background-color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 4rem;          
+}
